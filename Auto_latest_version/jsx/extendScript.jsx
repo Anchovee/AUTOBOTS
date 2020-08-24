@@ -3,11 +3,12 @@
 $.runScript = {
 
 
-        autoSequence : function (name) {
+        autoSequence : function (filePath) {
        
   
-var csvFile = File.openDialog ("Target CSV File", "*.csv"); 
-var csvFile = csvFile.fsName; //FORMAT CSV FILE PATH TO BE FRIENDLY
+// var csvFile = File.openDialog ("Target CSV File", "*.csv"); 
+// var csvFile = csvFile.fsName; //FORMAT CSV FILE PATH TO BE FRIENDLY
+var csvFile = filePath;
 
 app.project.createNewSequence("Auto Seq", ""); //PROMT TO CREATE A NEW SEQUENCE
 
